@@ -6,13 +6,17 @@
 
     <link rel="stylesheet" type="text/css" href="./css/layout.css">
 
+    <style>
+    a{text-decoration:none;}
+    </style>
+
 </head>
 
-<body>
+<body style="background-color:#f7f7f7;">
 
-    <div class="container">
+    <div class="container" style="background-color:#f7f7f7; border-radius:4px; padding:1%;">
         <div class="row">
-            <div class="u-full-width"><div style="background-color:#E8117F; text-align:center;">
+            <div class="u-full-width"><div style="background-color:#E8117F; text-align:center; padding:1%; margin-top:5px;">
                 <h1>Introduction to Caloric Pricing Models</h1>
             </div></div>
         </div>
@@ -20,26 +24,31 @@
         <hr>
 
         <div class="row">
-            <p style="text-indent:10px;">Caloric Pricing is a method where the cost of the food is based on the caloric content of the food, not the type or consumer demand.</p>
+            <p style="text-indent:12px;">Caloric Pricing is a method where the cost of the food is based on the caloric content of the food, not the type or consumer demand.</p>
         </div>
 
         <div class="row">
-            <h3>Example of Caloric Pricing</h3>
+            <h2>Caloric Pricing</h2>
         </div>
 
         <div class="row">
-            <div class="u-pull-left six columns">
+            <div class="u-pull-left nine columns">
                 <div class="img-spacer" style="height:300px; width:100%; display:inline-block;">
                     <img src="./img/cheeseburger.png" />
                 </div>
             </div>
-            <div class="u-pull-right three columns" style="border: 1px dashed #000;height:100px; background-color:#008CBA;"></div>
+            <div class="u-pull-right three columns" style="border-left:1px solid #C2C2C2; padding-left:1%;"><h4>A Standard Price of 8&cent;'s per Calorie as of <div id="date">
+            <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toString();
+            </script>
+          </div></h4></div>
         </div>
 
         <div class="row">
             <div class="u-full-width">
-                <p>The Cheeseburger pictured has an estimated $xxx.xx calories</p>
-                <p>The market price for this Cheesburger (following the Cheeseburger Index) is: $xxx.xx</p>
+                <p>The Cheeseburger pictured has an estimated 1,300 calories</p>
+                <p>The market price for this Cheesburger (following the Cheeseburger Index) is: $10.99</p>
                 <p>NOTE: The "Cheeseburger Index" is a reference to the "Big Mac Index" that Economists use. For clarification, more information can be found on the Big Mac or Cheeseburger Index by clicking <a href="http://www.economist.com/content/big-mac-index" style="text-decoration:none;"> here</a>
                 </p>
             </div>
@@ -50,7 +59,7 @@
             <p>The cheeseburger index was originally used as a quick global currency exchange standard, but currently it is most commonly used to predict changes in future market movements.</p>
           </div>
           <div class="seven columns" style="background-color:#E7E7E7; padding:1%;">
-            <p>Using the same methodology we can calculate the average price per calorie from the cost of a cheeseburger in every country in the world. Then we can apply that price to all of the other food. There are several exceptions to this rule and several vegetables will have a bottom base price so agricultural communities don't suffer under this plan.</p>
+            <p>Using the same methodology we can calculate the average price per calorie from the cost of a cheeseburger in every country in the world. Then we can apply that price to all of the other food. There are several exceptions to this rule and several vegetables will have a bottom <mark>base price</mark> so agricultural communities don't suffer under this plan.</p>
           </div>
         </div>
 
@@ -58,11 +67,81 @@
 
         <div class="row">
           <div class="u-full-width">
-              <p>Todays calculated price for Calorie in the US is: <mark>$0.02</mark></p>
+              <p>Todays calculated price per Calorie in the US is: <mark>$0.08</mark> or $1 per 118 calories</p>
           </div>
         </div>
 
         <hr>
+
+        <div class="row">
+          <div class="three columns">
+            <h3>Why:</h3>
+          </div>
+          <div class="seven columns">
+            <p>Studies show that the cost to eat healthy foods and a healthy amount of calories cost the average US family 240% more than a "junk-food" diet.</p>
+            <p>These links are provided for your reference: <a href="http://www.livescience.com/41732-healthy-diets-cost.html">Live Science</a> and <a href="http://www.telegraph.co.uk/news/11149644/Healthy-diet-costs-three-times-that-of-junk-food.html"> London's Telegraph</a> | Please note that these references are a few of many, that support the fact that an unhealthy diet is much more expensive than a healthy one.</p>
+            <p>With this change to food costs, families grocery store or marketplace purchases would be inline with the amount of calories the family needs (or wants); rather than underpaying for empty calories or overpaying for a healthy sensible diet. This will allow individuals and families the opportunity to create a dietary budget.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="three columns">
+            <h3>Examples:</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="u-pull-right ten columns" style="border-bottom:1px solid #000; border-top:1px solid #000; padding-bottom:10px; padding-top:10px;">
+            <div class="item-description" style="height:100%; display:inline-block; vertical-align:top;"><span><strong>Donut</strong></span></div>
+            <div class="item-photo" style="height:100%; display:inline-block;"><img src="./img/donut.png"/></div>
+            <div class="item-cost" style="height:100%; display:inline-block; vertical-align:top;"><span> Number of Calories: <u>260</u> </span><span> Average Current Cost: <span style="color:#008CBA">$0.99 </span></span><span> Caloric Pricing Cost: <span style="color:#008CBA">$2.08 </span></span><span> | &Delta; = <span style="color:red">+$1.09</span></span></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class=" u-pull-right ten columns" style="border-bottom:1px solid #000; padding-top:10px;">
+            <div class="item-description" style="height:100%; display:inline-block; vertical-align:top;"><span><strong>Steak</strong></span></div>
+            <div class="item-photo" style="height:100%; display:inline-block;"><img src="./img/t-bone.png"/></div>
+            <div class="item-cost" style="height:100%; display:inline-block; vertical-align:top;"><span> Number of Calories: <u>210</u> </span><span> Average Current Cost: <span style="color:#008CBA">$2.88 </span></span><span> Caloric Pricing Cost: <span style="color:#008CBA">$1.68 </span></span> <span> | &Delta; = <span style="color:green">+$1.20</span></span></div>
+            <p><small>please note that this is per a 3 ounce portion of t-bone steak, calculated at the national average of $15.50 a lb</small></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="u-pull-left four columns"><h3>Why it <i>won't</i> work</h3></div>
+          <div class="u-pull-right seven columns">
+            <ul>
+              <li>We do things the way they have been done, for this reason change is difficult.</li>
+              <li>The US is a capitalist country, if there is a profit to be made for selling a food item for a price that outweighs its caloric content, then that is what will happen under capitalist guidlines.</li>
+              <li>The inverse is also true, with a functioning economic environment based opon consumer demand a vendor is unlikely to raise the price of their high calorie food item to "get inline" with caloric pricing.</li>
+              <li>Caloric Pricing can easily be attached for not providing enough of a economic cushion to agricultural vendors. For this reason the "cushion" would have to be sufficient and that can raise it's own set of complications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="u-pull-left four columns"><h3>Why it <strong>will</strong> work</h3></div>
+          <div class="u-pull-right seven columns">
+            <ul>
+              <li>Caloric Pricing needs to work because at it's root <strong>it makes sense</strong>. It will inherently make it easier for people to budget their food needs based on their required caloric intake.</li>
+              <li>Caloric Pricing <strong>will work</strong> because it demystifies caloric energy and the rocky financial impact it can have on the average diet.</li>
+              <li>Caloric Pricing <strong>will give</strong> the fast food industry the fuel it needs to get to their $15 an hour campaign (for more info on this please click <a href="http://www.usatoday.com/story/money/2015/11/10/fast-food-strikes-begin/75482782/">here</a>).</li>
+              <li>Although guaranteed to be difficult at 1st Caloric Pricing provides the needed economic stabilization to further economic growth by selling food items for a price that is equillavent to the value it will provide.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="five columns"><p><small>This page is currently under construction, Thanks for Checking in and checking out this theory. If you have any questions I can be contacted <a href="mailto:harrypmckinney@gmail.com">here</a>. This page is proudly hosted as open source on <a href="http://www.github.com">Github</a>, to see the repo please click <a href="https://github.com/caloric/Caloric-Pricing-Models">here.</a></small></p></div>
+        </div>
 
     </div>
     <!--end container class-->
