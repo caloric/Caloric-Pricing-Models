@@ -2,7 +2,7 @@
 (function(){
     function rotate(degrees)
     {
-        $('html').css({
+        $('.container').css({
             '-webkit-transform':'rotate(-' + degrees + 'deg)',
             '-moz-transform':'rotate(-' + degrees + 'deg)',
             '-ms-transform':'rotate(-' + degrees + 'deg)',
