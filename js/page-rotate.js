@@ -1,4 +1,3 @@
-<script>
 (function(){
     function rotate(degrees)
     {
@@ -39,4 +38,3 @@
         }, 30 * 60 * 1000); // 30 min
     }
 })();
-</script>
