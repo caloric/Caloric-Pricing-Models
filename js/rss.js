@@ -12,7 +12,7 @@ $(function(){
         fallback = xml.responseData;
         console.info("rss values", xml.responseData.feed.entries);
         console.info("rss fallback", xml.responseData);
-        console.info("current nutrition rss feed: ",values);
+        //console.info("current nutrition rss feed: ",values);
         console.info(values[0].title);
         console.info(values[0].contentSnippet);
         $(".rss-feed").append("<span>" + values[0].title + " --- " + values[0].contentSnippet + " --- " + values[1].title + " --- "+ values[1].contentSnippet + " --- " + values[2].title + " --- " + values[2].title + " --- " + values[3].title + " --- " + values[3].contentSnippet + " --- " + values[4].title + " --- "+ values[4].contentSnippet + " --- " + values[5].title + " --- " + values[5].title + "</span>");
